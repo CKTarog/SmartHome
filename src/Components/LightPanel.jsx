@@ -4,7 +4,7 @@ import { IoBulb } from "react-icons/io5"; //bulb
 
 const LightPanel = ({ lights, toggleLight, setBrightness}) => {
     //for the brightness indicators
-    const steps = [0, 1, 2, 3];
+    const steps = [1, 2, 3, 4];
 
     return (
     <div className="rounded-2xl shadow-2xl md:mx-10">
@@ -18,7 +18,7 @@ const LightPanel = ({ lights, toggleLight, setBrightness}) => {
 
             <div className="m-1 flex items-center justify-center">
               <IoMdBulb className="mr-1 h-3 w-3 opacity-70" />
-              <input type="range" min="0" max="3" step={1} value={light.brightness} onChange={(e) =>setBrightness(light.id, Number(e.target.value)) } className="w-22 bg-transparent appearance-none
+              <input type="range" min="1" max="4" step={1} value={light.brightness} onChange={(e) =>setBrightness(light.id, Number(e.target.value)) } className="w-22 bg-transparent appearance-none
               [&::-webkit-slider-runnable-track]:rounded-full 
             [&::-webkit-slider-runnable-track]:dark:bg-black/25 
             [&::-webkit-slider-runnable-track]:bg-gray-400/25 
