@@ -14,8 +14,8 @@ const Navbar = ({dark, toggleDark, sysstatus, setSysStatus }) => {
             <button className={`p-1 px-2 text-amber-500 font-bold m-2 rounded-lg hover:scale-105 duration-300 ${sysstatus ? "bg-green-600 text-white shadow-lg shadow-green-400/40" : " bg-gray-200 hover:bg-white animate-pulse" }`} onClick={() => setSysStatus(!sysstatus)}>
                 {sysstatus? "ON":"OFF" }
             </button>
-            <button className="rounded-full border border-white p-2 hover:scale-105 hover:bg-white duration-400 hover:fill-amber-500" onClick={toggleDark}>
-                {dark ? <RiMoonClearFill className='text-white h-5 w-5'/>: <HiSun className='text-white h-5 w-5'/> }
+            <button className="rounded-full text-white border border-white p-2 hover:scale-105 hover:bg-white duration-400 hover:text-amber-500" onClick={toggleDark}>
+                {dark ? <RiMoonClearFill className='h-5 w-5'/>: <HiSun className='h-5 w-5'/> }
                 </button>
             </div>
         </nav>
